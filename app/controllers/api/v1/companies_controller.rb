@@ -1,8 +1,10 @@
 class Api::V1::CompaniesController < ApiController
+    load_and_authorize_resource
     before_action :set_company, only: [:show, :update, :destroy]
+    
     def index
-        # @companies = Company.all
-        @companies = current_user.companies
+        @companies = Company.all
+        # @companies = current_user.companies
         render json: {status: {code: 200, message: "Success"}, data: @companies}
     end
 

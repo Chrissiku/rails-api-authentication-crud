@@ -6,7 +6,7 @@ class User < ApplicationRecord
           
   has_many :companies
 
-  ROLES = %w{super_admin admin manager}
+  ROLES = %w{super_admin admin manager editor collaborator}
 
   ROLES.each do |role_name|
     define_method "#{role_name}?" do
