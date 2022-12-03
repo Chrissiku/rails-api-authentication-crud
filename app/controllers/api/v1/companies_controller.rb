@@ -1,9 +1,9 @@
 class Api::V1::CompaniesController < ApiController
     load_and_authorize_resource
     before_action :set_company, only: [:show, :update, :destroy]
-    
+
     def index
-        @companies = Company.all
+        @companies = Company.accessible_by(current_ability)
         # @companies = current_user.companies
         render json: {status: {code: 200, message: "Success"}, data: @companies}
     end
@@ -38,8 +38,8 @@ class Api::V1::CompaniesController < ApiController
     private
 
     def set_company
-        # @company = Company.find(params[:id])
-        @company = current_user.companies.find(params[:id])
+        @company = Company.find(params[:id])
+        # @company = current_user.companies.find(params[:id])
     rescue ActiveRecord::RecordNotFound => e
         render json: {status: {code: 404, message: "Not Found"}, errors: e.message}
     end

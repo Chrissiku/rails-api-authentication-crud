@@ -51,3 +51,5 @@ gem "devise-jwt", "~> 0.10.0"
 gem "dotenv-rails", "~> 2.8"
 
 gem "cancancan", "~> 3.4"
+
+gem "faker", "~> 3.0"
