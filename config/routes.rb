@@ -5,4 +5,11 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
   }  
   get 'users/logged', to: 'members#index'
+
+  namespace :api do
+    namespace :v1 do
+      resources :companies
+    end
+  end
+
 end
