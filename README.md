@@ -123,96 +123,82 @@ Examples
   URL : `http://127.0.0.1:3000/users/all`
   Header : `Copy header form the login
 
-```sh
-  bin/rails test test/models/article_test.rb
-```
+- List all companies
 
-### Deployment
+  Request : `GET`
+  URL : `http://127.0.0.1:3000/api/v1/companies/`
+  Header : 
 
-<!-- AUTHORS -->
+- Create a new company
+  Request : `POST`
+  URL : `http://127.0.0.1:3000/api/v1/companies/`
+  Body :
+  ```JS
+    {
+        "company": {
+        "name": "company 1",
+        "address": "address",
+        "established_year": "2022"
+    }
+    }
+    ```
 
-## 👥 Authors <a name="authors"></a>
+- Update company
+  Request : `PATCH` or `PUT`
+  URL : `http://127.0.0.1:3000/api/v1/companies/:id`
+  Body :
+  ```JS
+    {
+        "company": {
+        "name": "company updated",
+        "address": "address",
+        "established_year": "2022"
+    }
+    }
+    ```
 
-> Mention all of the collaborators of this project.
+- Delete a company
+  Request : `DELETE` 
+  URL : `http://127.0.0.1:3000/api/v1/companies/:id`
 
-👤 **Author1**
+## 👥 Authors
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Chris Siku**
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- GitHub: [@Chrissiku](https://github.com/Chrissiku)
+- LinkedIn: [christian-siku](https://www.linkedin.com/in/
+christian-siku/)
 
 <!-- FUTURE FEATURES -->
 
-## 🔭 Future Features <a name="future-features"></a>
+## 🔭 Future Features
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] Create an appropriate frontend usinf NextJs, TypeScript and Reactjs
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
-
-## 🤝 Contributing <a name="contributing"></a>
-
+## 🤝 Contributing 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- SUPPORT -->
 
-## ⭐️ Show your support <a name="support"></a>
+## ⭐️ Show your support
 
 > Write a message to encourage readers to support your project
 
 If you like this project...
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
+> To APPSIMPACT 
 
-I would like to thank...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LICENSE -->
-
-## 📝 License <a name="license"></a>
+## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
