@@ -161,7 +161,7 @@ Examples
   Request : `DELETE` 
   URL : `http://127.0.0.1:3000/api/v1/companies/:id`
 
-## 👥 Authors
+## 👥 Author
 
 👤 **Chris Siku**
 
@@ -169,11 +169,8 @@ Examples
 - LinkedIn: [christian-siku](https://www.linkedin.com/in/
 christian-siku/)
 
-<!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features
-
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] Create an appropriate frontend usinf NextJs, TypeScript and Reactjs
 
